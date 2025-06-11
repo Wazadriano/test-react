@@ -1,11 +1,7 @@
 import React from "react";
 
 const Brouillons = ({ brouillons }) => (
-  <div style={styles.encart}>
-    <div style={styles.header}>
-      <strong>Bon de commande</strong>
-      <button style={styles.toggleBtn}>▲</button>
-    </div>
+  <>
     {brouillons.map((item) => (
       <div key={item.id} style={styles.line}>
         <div>
@@ -19,31 +15,10 @@ const Brouillons = ({ brouillons }) => (
         </div>
       </div>
     ))}
-  </div>
+  </>
 );
 
 const styles = {
-  encart: {
-    background: "#eee",
-    padding: "1rem",
-    borderRadius: "10px",
-    marginBottom: "1.5rem",
-  },
-  header: {
-    display: "flex",
-    justifyContent: "space-between",
-    background: "#ccc",
-    padding: "0.5rem 1rem",
-    borderRadius: "5px",
-    marginBottom: "1rem",
-    fontWeight: "bold",
-  },
-  toggleBtn: {
-    background: "none",
-    border: "none",
-    fontSize: "1.1rem",
-    cursor: "pointer",
-  },
   line: {
     display: "flex",
     justifyContent: "space-between",
@@ -59,12 +34,6 @@ const styles = {
     display: "flex",
     gap: "0.5rem",
     alignItems: "center",
-  },
-  delay: {
-    padding: "0.2rem 0.5rem",
-    fontSize: "0.75rem",
-    borderRadius: "5px",
-    fontWeight: "bold",
   },
   price: {
     fontWeight: "600",

@@ -3,7 +3,6 @@ import React from "react";
 const SearchBar = () => (
   <div style={styles.wrapper}>
     <input type="text" placeholder="Trouver une commande" style={styles.input} />
-    <button style={styles.button}>+ Créer une commande</button>
   </div>
 );
 

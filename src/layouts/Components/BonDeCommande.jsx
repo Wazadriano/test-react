@@ -1,12 +1,8 @@
+// BonDeCommande.jsx
 import React from "react";
 
 const BonDeCommande = ({ commandes }) => (
-  <div style={styles.encart}>
-    <div style={styles.header}>
-      <strong>Bon de commande</strong>
-      <span style={styles.badge}>{commandes.length}</span>
-      <button style={styles.toggleBtn}>▲</button>
-    </div>
+  <>
     {commandes.map((cmd) => (
       <div key={cmd.id} style={styles.line}>
         <div>
@@ -21,42 +17,10 @@ const BonDeCommande = ({ commandes }) => (
         </div>
       </div>
     ))}
-  </div>
+  </>
 );
 
 const styles = {
-  encart: {
-    background: "#f2f2f2",
-    padding: "1rem",
-    borderRadius: "10px",
-    marginBottom: "1.5rem",
-  },
-  header: {
-    display: "flex",
-    justifyContent: "space-between",
-    background: "#ccc",
-    padding: "0.5rem 1rem",
-    borderRadius: "5px",
-    marginBottom: "1rem",
-    fontWeight: "bold",
-  },
-  badge: {
-    background: "#e63946",
-    color: "white",
-    borderRadius: "50%",
-    padding: "0.2rem 0.6rem",
-    fontSize: "0.8rem",
-  },
-  toggleBtn: {
-    background: "#dd7025",
-    color: "white",
-    border: "none",
-    borderRadius: "50%",
-    width: "24px",
-    height: "24px",
-    cursor: "pointer",
-    fontWeight: "bold",
-  },
   line: {
     display: "flex",
     justifyContent: "space-between",
