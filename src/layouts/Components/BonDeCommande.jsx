@@ -1,4 +1,3 @@
-// BonDeCommande.jsx
 import React from "react";
 
 const BonDeCommande = ({ commandes }) => (
